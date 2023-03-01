@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Libro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class='libro card'>
+            <div class="card-body">
+                <div class="card-title">
+                    <h1 th:text="${libro.nombre}"></h1>
+                </div>
+                <div class="card-text">
+                    <p th:text="'JSON: ' + ${libro}"  style="white-space: pre"></p>
+                    <p>-------------------------</p>
+                </div>
+                <div class="card-footer">
+                    <a th:href="@{'/biblioteca/'+${libro.id}}">Volver a detalles</a>
+                </div>
+                </div>
+                    <div class="card-footer">
+                    <a href="/biblioteca">Volver a biblioteca</a>
+                </div>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,4 @@
+com\app\LibroRepository.class
+models\Libro.class
+com\app\MainController.class
+com\app\BasicApplication.class
